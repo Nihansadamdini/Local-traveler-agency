@@ -1,0 +1,20 @@
+body {
+      background-image: url('https://do6raq9h04ex.cloudfront.net/sites/8/2021/07/galle-fort-1050x700-1.jpg'); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .navbar-brand-gradient {
+      background: linear-gradient(135deg, #0d6efd, #6610f2, #d63384);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 700;
+      font-size: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+    .navbar-brand-gradient:hover {
+      transform: scale(1.05);
+    }

@@ -1,0 +1,71 @@
+.navbar-brand-gradient {
+      background: linear-gradient(135deg, #0d6efd, #6610f2, #d63384);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 700;
+      font-size: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+    .navbar-brand-gradient:hover {
+      transform: scale(1.05);
+    }
+
+    /* Minimal custom styles - mainly Bootstrap classes used */
+        .card-img-overlay-custom {
+            background: rgba(0,0,0,0.4);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .card:hover .card-img-overlay-custom {
+            opacity: 1;
+        }
+        
+        .card-img-mathara {
+            background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), 
+                        url('https://www.srilankaclassytours.com/medias/place/big/583/thumb.jpg') center/cover;
+            height: 250px; border-radius: 4px;
+        }
+        
+        .card-img-alla {
+            background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), 
+                        url('https://www.srilankaclassytours.com/medias/place/big/583/thumb.jpg') center/cover;
+            height: 250px; border-radius: 4px;
+        }
+        
+        .card-img-sigiriya {
+            background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), 
+                        url('https://www.srilankaclassytours.com/medias/place/big/583/thumb.jpg') center/cover;
+            height: 250px; border-radius: 4px;
+        }
+        
+        .card-img-yala {
+            background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), 
+                        url('https://www.srilankaclassytours.com/medias/place/big/583/thumb.jpg') center/cover;
+            height:250px; border-radius: 4px;
+        }
+
+        .card-img-trinco {
+            background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), 
+                        url('https://www.srilankaclassytours.com/medias/place/big/583/thumb.jpg') center/cover;
+            height: 250px; border-radius: 4px;
+        }
+        
+        .card-img-kitulgala {
+            background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), 
+                        url('https://www.srilankaclassytours.com/medias/place/big/583/thumb.jpg') center/cover;
+            height: 250px; border-radius: 4px;
+        }
+        
+        .card-img-galle {
+            background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), 
+                        url('galle.jpg') center/cover;
+            height: 250px; border-radius: 4px;
+        }
+        
+        .card-img-kandy {
+            background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), 
+                        url('https://www.srilankaclassytours.com/medias/place/big/583/thumb.jpg') center/cover;
+            height: 250px; border-radius: 4px;
+        }

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tour Package Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUSEhMVFRUWGBgYGBgXFhUdGBgVGBYYGhgYGhgaHSggGB0lGxcYIjEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGhAQGzYlICUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLi8tLS0tLS0tLy0tLS0tLS0tLS0rLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAEAAECAwUGB//EAEsQAAECBAMFBQUDCQUGBwEAAAECEQADEiEEMUEFIlFhcQYTgZHwMkKhscFS0eEUFSNicoKSsvEHU6LC0hYkMzRz00RUk5Sjs+JD/8QAGwEAAgMBAQEAAAAAAAAAAAAAAQIAAwQGBQf/xAA0EQACAQMCAwUHAwQDAAAAAAAAAQIDERIhMQQTQVFhobHwBSIyQnGBkRTR4VKy0vEjYsH/2gAMAwEAAhEDEQA/AMmmHphTlhIcgsIeRMCxUkuL/AkH5R2ecb431OEtK2VtBqYVMWtCaCLkVUwqYtaE0S5MiqmHpixoTRLkyK6YVMWtCaJcGRXTCpixoTRLkuV0wqYsaE0S5LkKYTRNodolwXK2hNFjQqYlyXK2hUxZTCpgXJcraE0WUw1MS4blbQqYsphNEuS5W0JosphNEuS5U0KmLGhUxLhuVUw8WUwohLmfM2jJmIpXMCCbHeTuqSr2gQbgjIcj4Z+Cx/dGhB71F8/a8OIIeI7W2QVjvEKQZzXSAQFpJ9o3arVwz5RZMSlCUvJIKA5O8Ui1zqBe4D/hwC9o1Hi89Vtff7nZrg6VmktHujoEEEOMok0NspQXJQsBqhUzNckk/F4K7qO4o1XOnGT6pM5CvQwqSiujYM0JoJEqJCXFmRWqbBGhNBndwu7iZh5TA2hNBvdQ/cwMyclgVMKmDe7h+7iZk5QEEw4RByZfKJtyHlAdQaNDtZniUYcSDGgQOAhAQOYPyEA/kxh/yYwdDQM2NyYAP5MYf8n5Qa0KJmycmID3EISIOaE0DNk5MQLuIfuILaJARM2OqUQLuOUOJEFxEiBmw8qKB+5hd3F9MNREyGwRT3cKLqIUTImB5nhcdicOtc4omKCc1ALCQXZydLW8o6TYOJmTglQmlIUsJKSFNcEtlvZMwteI4LaE6fOKEAlCHrDsim4UOHLhYvF2xdnOU0TSnu3UmkuAQ6mqIBUNNOukfOqlSL1nFKWh2EVodBgE7jABkKUgNkyCUj4CCKI57Z2HnlZFSZSH3lOklTXIQdXJJfm+do6SRLAACS4TZ3c+J4x23BVZOlGElskvwczxVFKbknu7ldEQnTUIFS1JSOJIAgiaDYBr59Okcd2xmTE7iqShSyRvF0rSH191Qax1EHieNVJ262uJR4V1PodVIWlYqQQoHUGLKY8+7ObfXKUAQkylE2ADg/N+WUejpEHhOLVeF9n1QeI4V0pW6FNEPTF1EPTGrIz4FFEKmLwmHoiZBwKKYVMX0QqImRMWUUwqYvph6YGQcAemHpgpElwC4h1yWe4heYh+TK17AlMKmLhCaGyFwKaIeiLmiaZUK5pDxpN7AtEKiDJkpIFiYqpiKdwuk46MoohUwQUQTOlpptYwrqpDxoNozqYVMXtDUw2QmJRTCi+mHiZExPHtkSjNUZSFqSh3WzmoA2s+V8r9I3MRiDKHcAqmEg1spNSUJAJGTOygcrMBcgwth4MYZDvWuYQAA4SWO9ndaU8cnI4GMyTLEzFlaAAmWUuz7xqvV1NTh2YGOFbjUqN/KvE61K1kbs7DPKE0gqSbWl0EgHNWj1Bi2V8rNnCb3Sv0BCO8VUkhxVdTkPdnPRhyjUmbTKJSZZISlKqQKiTSAXUsixJSGPI+MZXaWSkHvJYapKSEua0JIYJt7Ierr4RfTVOSvF2aS+/0+jKJt5arRmxhJM2fL74zVVJakm1JYENqXd+Iy0LiIxwmThIxEtIUn2gos4vSpLGyrs3OA9n1TihFQEpj3jm1QD5HQ2DdYltPs5KMtUxE5dQSVF2IZJG6BmHDs590xZV4qFWCpy0l2rXu1KI0MJN9Da2FsZEuaUoBMuoqQo3JAJAPAEUnTVJjpJu0ZaZglki7AFxmSzdX4x53gNoz1ShJw8ywSAVMXSlQAUx9xINnzYOAI6XYWzJYKA9R3VVPvKUHUoqQRuuQz34c42+z60aScL+8318EZ+LoOTyeyOshFojVDPHQXPKxJUiHBhksQbwoFw4k3hPEHh4lw4jmGIsxi2UgXeIrZ7QuXQbBpXIJTEqYmE2eGAeJkTBjND0wniVJZ4mRFArUiJoURrChEwHqMrrYdayRFTRapPSHlpcs7QLpIZpt6lVMOREyITRLksyumE0WpSHuYZaWLZxMg4O1ytoUTY8IUS4MGeZ47F90srUHZpcoXswBBItm5MNsXGoly5lIrMwICwbBRrXYLAsGN882veK8Zh+9L7xljdWRkFkFgDxur+AcYWytnAInEhSKJaFCsBwVTZZlkPYgpSsvzMcZQtFd6Olnu0g1M1M8AuSCCoM+aXuXY3IPB3EB7MnJmomBbp7wqAWG3HpoSdCFEEEcS4Z4N7OpJnzENUyJhVdwDZru3L96Ado4ZfdISEkqWsqNLCgB0CwHFMzL7I5iFjaMmloCSvG7M6TIWXw0pQKlKFZSSyUgqBcswa+XFot2jMEqWEoKn9kkqN/tE6C5Hp4t2BKMsTkEFCgElRLB94sH4OB5GKMPge/QtZdRQE5AAd4Tx4MDrnFudpu+y8blTuyWw1KQFLRMVLJIClJJFYJACujqINve522sVOWmWZjKRMSoyyUtZSgCH6qZxYsYA2Rg1JlOWI7ws/6wABbUVBx48Y0wolpSwFImJJSsgt36TUpSmufdbpxzrqVE53XR+QZU/dT7QnZm2u5dEz2EhISEl3LkrWCbsHZsrWaC19rJYD0lg5zFk2pPUubaNHP4TAKXvJUpbOWQnUkAi17ktfVUa0vspPWBMlSlFC7pekGkk20DMXj0KPtKtGON72Mc+CjJ3SDR2sk7tlgKBJJT7OTdXc5cDEUdrpPvBaeViWzBscm+NoFHYGeFB91v1gQOGQI+PGGX2IpG9ikW1CVKbMMSlg19Y3w4+rPaN/szPLg4x3dvqwr/AGtlFQDKb3lXtnkGc/CJyu10k51g2sRqSxFuHGAFdkUJSEnEkqzshJDFwAA4J010Nr2fE9jVJSCtc4Eki2GRob2MwKHiAIuXEV38vgVOjSXXxD1dr8MCQ67P7vNtTrE5favDtvFSTwpJuwyIzu48OEc+ezslCiJqp+Vh3IQQbMXMwuGezXceMTsnCMxVOJGoSkX1tWW9Xi5T4h/L6/IjVD+o2R25w7qBTMsTcAXA1YkERViO3Mt/0Uta7HNhqGNiSA1WY4c4xZ+xMIxKDPqL+0EFLnkGLZ2eMc9nDdpv+Aj/ADQX+o6LyDfh+svM6eZ26mf3KUjLeKjfPQAZQ/8AtxNe0lJSDekq1FhyL+tYxtl7LMo702pJ9pHd2UMyC6uX9IP2VgsNKmVqRMX7TpqFDEmlgd42sXVe8UP9Vrp5Fi/Tf1eZpDt4GcyFZkWUMxpccYS+3bM8i13PePflu8YHxM6QtZMyQlaSQoF1JmAhIFNSVeyGYZloqIw6XowwJOqpkwgG1wKuWpMOv1L3XkLJ8OtpX/IVL/tASQGkl9RWG5tuubconL7dAqH6A06svey4Ut8Yx0YeUH/3dB5lc63RljiYZWGlW/QpDcFzsndi67h9IfHiPVhOZQ7ToUduZBzlzXuwZBex1q5RWvt5JYtLmPo5Q2jOXtflGJJRLSLSJRs28FHJ/wBZx7R14cIgMPKBq/J5YzyM0C/75hsa4c6Habx7eSQbypjPcuj77mKk9vkMWlKKntcAEOnPNixVk+Q4lscS5bN+Tymz9/T96IiVL/uZf+P5VRMK/cRVKBt/7ej+6/xn/TDRkUS//Lyv8f8AqhonLr9vr8B5tAns3aBTh1oSlICiGBAszEFjd8r8Wg3aM3vsOtaCEkzJCDexSgTlkOnK68+XSOGwinDFTOBxNsvG8bmFAGCKbb2JFILsT3LE2vkvPpHL8jGTlfU9tM2dgzwhVCEKmqVVUlXsKKgCSpQ0aq363KLNvT1SikvLMsmkU1Ogi4SpySQHzzsXzi3AbDVLCMu8KXDoSWGbL3h1a/OFtuWvEy1pmpJUzVJDgNwawFnyvryxyqwctdtv5Elkw3bGFlqw4UGmpCXUkWW2TpJSBMAFvi9njJ2RPZLBjJSStTBt0Jv+8akI6zCNBE9hT1GQpkUlCQm+qmdYvnZzrAiUpS8pKgA6VTCUlnRvMr7Qcm3PiLBRs3B+u8NN+9YnKmKUhRU/eBctQGQTLN6wCW91m5p4mDMITjViRKSpkJTkzupVTg8LIB5J/WtUMFVhVMPapC1KC0uAGbeyFueRJbScpC5YBlJW1EtjS4WEMk+yyg6Q7Z73kVZ7Lr+xcrvc63ZnZSbXUtS5UtKrIUmSUmkBrgmzEi/O0dOvFyJaUyu8QmwpSFJFibW4O8Q2DImmWlSt0EZFzp9pSi8ETcNKTUSAoqzqANnJAbQBzG3JWGinbUEOICgAlLg5zDdIbVyySfGOd2ptEBZT36iGYFCU0i+rj5HSOgVg0kWSkDRIFvLSBZBQn2mBGQIXd31B3c+Ee1wdZON7M8vjKEm7J+f7nHzpaDvKmFRzAABB5HeDHwhpiJZH6NU4nmnzZlRt4rBoUHTLkuCbgqzc3Z7QHMwSWZSpaVMLqlyxyYELY9SAY9NVUzw50JRbXrxZkTwkWBmDilf3v9IHmyCmxtyNjB6kt7Jln/0fooxJW05oTSVAjMGxbkACwHhFyfYZnv72gDiMKAohJSRxBf4sH8oqXJN8rdb9LQRMmFV3B8APlF8+XKBZC5pS1yqXLd+QEy48YOwMr6ozKTl9IiEmCpmdi4yukA/4T98V0kf1iWJkULT0hm8Iud+cVqQPTwGxkyCk+miJT08oubm3hDGX19eMS4ykU0nlDGWeUTKeZHUGHCD+qehD+UDLoG5SpBGkNRyi+h7Fx5t8LxESxx+f1g3GyK6Dw9eUNF3cjj8oeCDNHLycKqUXcFSQlRZiKSaS5swqITa9+cE7SnlEjDJHtHvZxAt7aghJ52lKtzi780qqlynH2VKyzUVUp1WzjIZ9I1MVgkLEpN0lMlCXLBVFRIU1yHJUwPCONdaMdXqdfJJbA2wduTO8oWoCsEBSgGsz3OQtm0dKrGUrZMwTVApqKTYE6DgGYjKMzY/dJm90Qmi6juJukJUQVqJcsWYvk7gAxk7KwhVLmTSV0JS5IUod5MUwSkHqc9AekYalKE7y27hLX0OqmT5ErETWVL7uaSUpLnfUEiaABoTVkMz0jFTKSZu+mxKlOFgkElnIG6RY2fUw8yRNFGGCRV+jJUl/aMtLpN7pGViGvcWMWysIEsJpIewIyrQlTA6gZG/uggZWErLVPoPh2BWO2o3dy7iWLICUPUyaQTWw9pywfIeFmxdrzkTEFczvJTqBKaAtBpdLKZ0qbQaGDMBsyrDy0nEqSQS8shygEBjm2QBPN75QbgcIiVMeWK1rpJFgCQTTSkXDA6cIejB7paFqi73Z2OO20iUhJVU6qQndUreWzJ3Qd6/TpAY2lKUQoT0DQg3Y6ghLlJ68IKm7PmTakTKUyyACAxezKsU2fqYzk9hMODWhc5KuNYJ/iKaj4mN0OX84J5r4AmsKNUtQJGdJBZxBKps0pO8JfA5HLgSx+ET2ZshEkKFallRBKlM7AMBYDJzfO8XqkKGRqHA5/WNNPiYw922hROi569TnxIUZjrmy3NlKUlCra2II/rFu1diS0XGGlLFy6Jq0qI4gZdWgvFYRKrDdPAj6iMufg5lkrZSUkEJK1MwjfCrCesZGCpQcVaUbnOzcCha6QjugT7Sp26nmXS/hBY2mmWQasPjALb4n1WyCXSAALaGOjxSMMsvMkUHjKISG5pIZ+kCp7O4NZ/RzFDkopTbg9BBjTnF7+vuYZcPOPwJeu7Yw8TtXCrH/ACq0ckTw3kpBjNmT8P7sqd+9NT8xL+kdvK2LJwpJIKqrNNEtSWs5AtxzilR2cs/pJUtB4hcxKS+VhYeYh41Yra5VLhqj1k1f6fwcThscUVhKRSsMQq5zcMSm3lpDhZI9i3RBPnS8dHiZuzhYSpuftJWSOj1kHrAE9eBPuTvAi/mbfGLozT1SZmlDtkvX2M2VOnIvLUpB4ggfC0Gfn/EO86XKmnjMlB9buliTFaZeGJulYGn6ZPyp+sHYQ4ZSwFBVHvELQ7AWYG3o6wZYvdBhnaykUK25KW1eFw6iM6a0uOGsA4ichXsSUy+YUrj1jppuB2Wommeodany4h38oEnbEwjbmLP7zZeIF4SM4dj8R506j0yXgc6ZliClCrAAgMQ3SyvEPA65iBmCnw+sbOLwGGH/AIi/Gl/gBfz1gBSJQB/Sk52TLPg5JDP4xbmnsUOnJb+aBEzU6KT5xaL/AGQOTmK0gEsEqPgn5OYipAGgHkPpBuxbBFA/V/hVCgVh6IhomQbFYQzzZigCyVpqOZbcdiQUqJcgFt0wbtFLKUojJEopKiLq7tFDgneJKmvz4waqhcoJUoLQtHsEsoA567pA6ZjpAe08KrELQLpkgKKwVAFSkigA5OLHpfiG4OMlJWlp+x2cIpuxz0oLnTQiUGQp5YWW3rkqL6hntwaOswr1rlJU6JbIW2RIIqdWpJ3QNXtGZs/aDzXlJURLRTLYMDNmKG8SMkg6cEjkx8kplmVKSNyU86cpXtTVhyC32KgLZlxnaBVWUsV2evXeWcu+hTj1Ta0TAAFd75mY9+gQB4vwLbOPwMySiUCCP0ffFHvJSSbKYuC17HQ5xg/m/ETsQU0spIK1gsGXNYhAGl+7QOABOUdsNlrZSlBZmKTSc9QEi4PS4aErUXCKVrv16RI2b09WOa2ZPQkKoG8ohKUqckqAuzpS4ZLvyjouzOBmHEBapaUCWHJzJspKWbnUeV+UZ0jswqxMuchSbhQmLmMTZTVKquLa2jruzuDMuXdUxRLA11uAHYMcgHOUaKM7JxQU7m0DDqEQAi1ReLglC0vESWEWTEtFC5g1iEKZ2EquM4pKfdVb4wYiaHaIYuUDe/kT8oTbVDb6MxsRKUnNLp4gRUMOlbMQT9kuD+MLFT5wWsJZSa8OE3bdK2m8Mg5jXSujNgni3xLXj06PF3spMx1OH0ukJG1rUTkpawBSwvq9ww6cIw9oyMMpR9pybvNtncsQTlGxPQg3BB5jL5GApmHQXcHwIB8CA/rSNcXZ3McoX3IYzssuVJ/QGWtN1OqXKJAdz7QBbxLaRlSkbPWgJmCZLmlqu7U6XfQLJABzbhrHTpxS5sqlIKygh1hTTAGI3eLnnHFbXkYqsEd/YuCXDagu8WQqSvb+DHxFKMVdK/da5PG7DkJO7OU+oXLZvEG8Zv5vRdlE9AMuPtQUuXiVComoABTuPevUXzdjeAcTJWk7wp6AC41tGynJtbnl1HFfLb8lWI2dlSlZLei2msb/AGQw4aiZiEID2QuShajmLrKQ3IOSeEc9cXCjEFqUbVEjPMZ+UPOGSJSrKLu/M9D2h2WWLpnIAv8A/wAwcne9NvlGIvBoQU95NQUqy3EguM90ofLWMPCdoMZKIKZ8wgaLVUPjBuL7ZLWllypZLguAXtwJdoz2nHRmx1KUtV/7+4bKODBCxMCSk1AhJeoFxkm2XGCMbtPDqVUtUmYFDeeUagb7wWkBXC34xgnbMpaQlUsABzk1zqaQHbnCWqWQ4QnJvbt1Y5WixRTK3Wa00/DNn8u2V9hfkuGjn/yaXxT/ABI+6GhsF2v8i87/AKL8As9JT3qEJTvzEKTvElCaglRSQWdsweuYMdVtDZoWUhMpaEmXStRUGJULlFJdNgi9snbNuKTtMT5gUlwACAk5EkEBxpaw6HO8egyJi1oHsB051KOmjiOH4ic4pJrXyOyp0oTvYyUbMkYdCS9KErfU1UvokaX/AITGXs3FhUyXPmJJM6ehkElhLrADngkrUANTKHCC9t4QHupAcTJgKSUrDCXUjvCQUvcMM81dYfsrsxWIxKZZP6OSe9XR7NKGMtKVEAv7Iyvnxe/hI6ZPd7k4ibjGy32+53czYSUzlz6nVNUFkfZZCUp0z9rPjpdzkS8uHBhDJxExVyAk+rdOfSJBZ1gSllK7JGKirImkARKuK34w4h0AmTE0Ke0UKVCC4a5C6Yh4HUiL6oirwiAKpZAMTmXFoSkwlevWkBhBJ8pVmitDsxi+fiWtr90DTJjlrD18IR2GAF1oLhx8j9DFasSD7SR1Fv6xrISzxk4kMoi0ejw/E5e60ZqlHqiEmYhKgsFSSC4IA+N7jlG3gdqmYmhVayS1QSxZ7k+7yYRzqoNwOJ0AUCA1Sfq2Uar3KHBW2K9vbAmrWQKyi4S5KrHmAGcZiMHC7KmylVCYshwSkUqBpLh6iQG43zj0HG4xSQkU1JOaqsrZEAE/0gTFY+XSoMTkKUoJGdxcfdBjN7GWpw8JatHBbVMxTqTJQkEm4SjLhUkX8oz9k0KnpRiKpaC7qSMi1sxbqY7KftJGssqSCGSUkU8WAUwPO+WkZWPn4U6LJL3UEEjy/GNUKvQ8+pwsVLJ6/UNk9j5c4KXhcSiYkGne0UwJDgHJ+AzEZO1Oyk+U5VLrSPeQPpm3NoGlY2Wmky9wpNlMlJfJ3SQSWbWJy+0OJlv3WIUzuAVA/BYU0WKdRPtK5QoW7PoYU/BB3BI84qR3iCGIPIgn4QfisfMmKealJ6BCfOkCKzMD7pZ9Mx5wzcZdLMyu67wfv1+qoUGdyv7Q8x90KFsu1/kW3cX7V2DKlzMPIw4qCqplyS9LBLknL9IqOqnICJYemyfsKOQv7zExh4WXRjSAlATKkISkBRA3lLe5DuwAbkLxRtiaZighCFBSwpyFpYy0jf3gbEkhN/tHhHHTvNxT7L+vsfQoxUbtA81RpVjGTTMV3cthSKQNw0Ekpr3lORoOEd32c2avB4NATLqm4g97MNQTSn3AxBLHNms5yjnOxWyhi560KaiUvDrmhvcQjFJUkcblI6EjSO5xNa5qpi2AfdTaydHI+UbKvuwsuvl68zBD/kqZPoSQs658Hf6CJiKgYsSYpiaGShJf1yhgqHBhxBGIlokR9YiIJCaVxIkRX69fGJQSDKf169NCraHispHp4hB50pKwOTZ+N4DxEkg3y4+OsHIAixXT1+LfKFaQUzLSWyZtIpxMsKyzi+bKuwyzu51d4ZYpurz9awibTuhmrmTNkl2a8a2Hk0AJGYzNg5+cVzEBYgDF7e7lM1wCZZQlwmxWv2AQNLh1Dnwj06HEKXxbmWrSfQ3JMp/aZjn08rwbMwktSRVT7IYkAG5tY5HxjMk4gPU2juAMtItTiwkg2fL2gGBF9b5Ddb5xqkroyrRg+0tmt7BSAwzqA+cc9jthLyUlB4EW+KmeO4l4xKw4UXGYBPAvY6OXe0MqaCG1BelXDQvzeAhJJPdHmMvs8sk0JsM3t8dekNN2HMAJEs7rud2kdTxj0SdhyRuSkl7E1EHI3epJy+cUSpKQCStzUwUFTbHJixJLc2t5RfGq0Y5cJT6Hn8nATFAUoNJffSEkWsXZNrkeflZN2TOISEuyiyRcJKuqm9ZPHfKwq1MQpR1JJpa5FmYjjbhAuLwq17xW6AXKGqTZ+F/GG5jF/TRscR/sniOCf4T/AKYUdL+Uq+wr+FH/AG4UHmSByKZxKwubMnlSriYlN5SVAiWgClSSCwqJDi8ZEiSkJUUq9pYSHQACkEpSTSbAsssNOGUaexQn8nKiSa1TF2JDuSQXBHCNTsLsdGIxDqTTIkoC16JCUkkjoSBrkFRz1Ne812WR0XEVLRS6u/idv2U2KcJgQAoomz2WVFIKggPSkjicz1MHKmi1RDnm1XT4xh/nyZMnqUsLCCdwFKmAchILco11TrZ8tfkPDyil1VUk2iUklGyLyH5wzerRFMwG4iQOT5+MOhmSETHrwit/XCJA+vp8vOGASEMoxEnj/XnCfI+tX6fgIJBFQiAm2yN3+phU+uVoclvWrxCF1UQX9Pp/WGKmuSwDXNruNedoerLW4+v3emgEJOeESqA+P1itZf5fMeusVBOdyeWmvn+EEhbMlBV7esoGnWtr0JETAvw/B4kSS46u8I4hTMWV3wKmoZ7A1i3j0MZ+I2IZqZqVikTSFKomF6gpKgQSAQQam5EZRvYtBfNw1rKJJsDkLC4tnc2yaoy2LhnGd7W0f0YCk0MVLmTEAWe38J8LQ0vEVg5OBe3xzyeC5cx8/XLrFM3DB3TY+s41U+Ka0kVSpJ7A/fLQRMSb/wAySXIYKtpdsw8bUqmampKiQwTkQxLEg5F7iMCZPUlwRy924/hiSMaM02PiOBYscrZPG6FSMloZKlKSOkmS3UDuqIs3Li2nU8YC2hOnhfsilt5lBLjhz84bA7WSpVExgWzOttdBrGipFaU7yk5FwahpldyOnHhD3KXEwsXe6Zc0EjMq3S/FiQTzVnDKwRqEw1BYO7UwCbZBKKXA8zGknFCSTUsFJpSyindJ1JGQy9q8ZU7aCiWRkXYoAIIZ+OZ8YbKxW4o0vymd/eI/9tM/7kKMJ5n2j/B/+oUNcWzPP8GgJRJSEqcy1JfmCkixta/MuOUes9ndlDDYESl7s2aEleWQA3fJh4qjmcVICtoTgQLXBJsCoS1WDZ+tYlidpKEwGdMrpFTFaxYFTM9s0nPhzjzJUlg23b/bPQi3KpornTSRSD1yckZ6ai/lEkC+fha2nW7Rj7R7R90lLyQSphur3Q5IF21b4xZiNvmUPZllxa6jvEgJvrcpvzimNCOyl4F7nNfL4mynKHGnr1+EB7PmqWkLXYlrAlgBcZ5+0bwW0LKOLsMndXHH3fT14Q4Nuv4xEN9PgPXhDt+MAJN/X4Q3r6+ukQWMvnbn5ZmEknr6STb6wUASefw1t6y5cIYgMzDL18xDg+vj4XPp4io3v6yf1ziEJKPrpEkq1vrx5vbwioaB+n9YfDzAqqkg02IcbpszueDeRgxjKTtFXFnOMFeTsu8uBbMZmIrQ+fr79YRURpYc/XoxHvhqQb8Rxb7oLpzW6f4BGrTl8Mk/uSKef9OnjEUkP8PG1oXi+o8n+UOR/S3D5Zwo49Ttz11zBZs/6iB1lhwHTgBnwLN5c4IKb2fXU8M+fT8Ion4Z+TA5M4ezh+Dny8kaGRnTEZKTmOJLENlbqbtaL5cy3pxyPCB5ksJdTgOb8LJHNsgNdeUQJu4sLm2eQF/ADLiOEIMEYvDhQjFnJUgs8a8qfEp8gKEPCo4PQDSejMMF7aNoI09m4wyklMpTA+7Sim+uecZeLw9BztAtzYHlHoU6ykUToh+1ytR7zeLB/wBGqxZWSgfd4m/xjXlolTZVRUJS2coKEhkuAlTAggHIEFox5M1SjdNhYPy4cNI3tl4oElBLkumybUlyARwaziNMWmrGSdOwB+bkf3w/xf64Ubf5vH9z8Vf6oeJb1YqxMDaExCly5yAQZqFrLs7iiWBYnWUcuMcdtzGlM8pKkp3UsmYmwQAalHIkXfmxEd/gpK0y5aFqcy3AIc1OpSnyzvzyjk+1HZzEz8WidhkEtKShSiqWGWJhULKUHOrsRrm0eaqjre40enGPKeSA8TjUTEJQlR3aGIw89LUl1EOi18v2Yu21tiSkImqrCUgJAMpQdV2uQGzf92NDCdlMYEbxl94AospZBup7lKSCNY5HtfsVMhaVY/HomLDEYeRLJLWtdSRLBHvFzyMX06LlsmVyq20PV8DLKJaQcyApjpUAWPRwIIB+vygc7Ul4hVcosN0kEZbrUv1Hp4sr05RkqJqbTLY/Ci0r8PV/XKFX8PxioTM9YZK3JHD66eXzhQhAVDE+vOI1euf3RCYgFnDh38bfVrQSEwu/j+PyBjOxm2sNKLTZ8pB4FaX8nflBZSC4IBcFwWIL6EfCMXEdksEs3w0sW9wFF3IA3G0Hx5w8MfmFlfoZfabt9hZUtSpExM2cwoSBMpLnNSgAGTcs7m0crN7XDu5E+ViP96v347opQoKLgWsaGCXe4zyaOpxX9neCLkGcgXFlgixzukljfXhAJ/sww2k+b/8AGW5ez68Yvi6Udmyu038STQTgO2WHmBsTLWl23pYSU0kXKrgNyAi2fIw65VCJippSKZSkzJyFJF2rQkhExmIqcu12gJH9lsnNOImpPEBHna8RX/Zag3GLmA8ShJOWtwfjGmPtGa0c7rvT/h+Jhn7K4dvKEMX3W8rNeANN2TNKyqVOmSkqcoSucpSgzkgOnJr3chs4hLlYwN/vySP+sgeH/CeC0/2eYhN0bRVZ2JlqGYvlMLOw8uUFp7H44FvzkpuaFk5PkZnSH/X6av8Au/crl7Pad4r+3/EE7PzcamcpWInSpstSWVTNJUkA2Wl7asctI6rYWPZ5SzUStRBcWGYSQ7hg3iqMiX2SxeR2iSHSSDhwXYuBeYddDqBGz2f2F+TKWtU1U5S3upKQXUorWXDk1Fib+6OAhK3HqpSdNpNdN73Go+z5QrKsm09ntZr13GutAL2+epz6Np8rxmz5LEga/ElyR5AHpGg5s3Lrzt0MQmSgoXFszkX3GzyyZ89eMeU0eumZYmA3LH6Z5+Y+cXyiBcNfPnzgedhlAM+9YlgQGqFi4s7gakBzrFaFZBW7azjKzXtq7NfKK9hw6bJChcAxl4rZ32YMTiaXJfwv8BeCV3dtIKk1sQxNiKpnoBVTe26DvMQkF+Z9Zx2NdmN6nuzOdBYW1zjj8fhPeTY5/jHTbO2tKm5Ehf2Vm78tCOnlHp8NVUlZmTiIP4kEdwr7K/4lffCi3d+zL8kQo12MpnhXryjnNkbdlYfFYozZ7IFKzWFNVvJAluSV2BDJsabAa8pL7f4o7pTJdVnpWGDF1e21g5y01gDD1TlImSwu05FSe/XSJbJ3T+qbjUgEC8YKVKVKV5GuclUVkb/ar+0PETlKGDlrlSikjvClXeFw1QYGgZ5XyuMo85n7MnELWUK3TvlViCVNvOc3MembQdKFJ/JUoJC1EoWZhUCgoKgFpSpgVpVa7IZrwRtRRnYZaU4SZKlkbwIlDmksF2QAXLXcZWL6l7QxVoxt9xFw/a/Av7CzSpK+ATLSKn0BD3NwpjwGbR04U+XX18/OOT/s+QsywpmR3MlI/bQqbUG4sofCOqm2+P3/AFJjzasspts0xVlYsCvWvU84czABybwHU6axW31+X4HyhNp18evrXpCBJ16/D16vEBO9WvD+vHT4fSGpys/0s0EBMF/XpjkeNodnz5v0II8LgeUMQHy435Zty9dIiVAXJ5/M5nmPi0Qg6t4NZ21bN283ybgeMVpcgXBfVgU5PbqAfEjSInFb9OSnNIOoDkkPqCz9YkCGDEsQAm97kkAeBsD9kc4hCyWvXUkjrn/Xw0idbuLjM26t9RA5ZrZaDIDPXgQ1uY4Qgu1RsQHOjJbW+j5u2fMGECCsX5Za58Rw9Wh0zWYa/d8jA4PC+oPIa/Hqxyh5aqnDEAMxcufA34QAjiaM76fE55XGUOmYM/pd+AfXO0RCAeWRHi/G1n+As0QUgBwNQRw4O3Nm9PERAkrJ04DXNWfy+UVoU4c6O+eoDG3Mm/KGrGp58sr/AF84hLcW4C3gz589OR42ICE+USbEmojhoyXfRwNOGUBrQWLhI9nM5KZLC/MZ8+sFVbrXyLFJckqBPDM5sbfOKGJIAZwCbe1cukgnN0v8DawhGhkwZJJzyLEPmxDgEHX4xdJnNDd1VLBdwrVrEED2n9lXHQNpFF0s+8LcyHZvXSEasMGkgjnGditnpNxY8uMEImB2BD8OkEAuIKdtgmPTP/vF/wAavvhRp0wos50u0XFHjUvM/sK+aY2uxftr/d/mhQo9XiPhkYaPxI9Pm/8AGR+yfmmKe0X/AC6+v+ZMPCjx4br11N0tgPsF/wAmnqr+aOgR9fpChQ8viYi2H0HrSIn6j+YwoURBInPxX81Rbw6j+cQ8KCQcZeB/zQPiM1/sK+SYeFEAWTM09U/5IrPtnov5GFCgkI7KyHUfzGIyP+Gn9lP0h4UR7kCZen7P1iM32letFQoUKFCl+z+6j/LFA1/ZPzmQ8KIQSPe/aHyXEx7Kun+qGhQxBIy/cX9IFxPtzP8ApK/lh4UBkLvdmdFf/WIExGn7R/kEKFFTGRnSvb8v5TGhLhQoVDEoUKFAIf/Z'); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .navbar-brand-gradient {
+      background: linear-gradient(135deg, #0d6efd, #6610f2, #d63384);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 700;
+      font-size: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+    .navbar-brand-gradient:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+ <header class="header">
+    <div class="container-fluid bg-dark  py-2">
+      <div class="container d-flex justify-content-end text-white small">
+        <span class="me-3"><i class="fa-solid fa-envelope"></i> yourname@jetwingtravels.com</span>
+        <div class="bg-secondary px-3 py-1 rounded">
+          <a href="#" class="text-white fw-semibold text-decoration-none">Hotline 5868</a>
+        </div>
+      </div>
+    </div>
+
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+  <div class="container d-flex align-items-center justify-content-between">
+    <!-- Logo and Brand -->
+     <!-- Logo and Brand -->
+    <div class="d-flex align-items-center">
+      <img src="logo.jpg" alt="logo" width="55" height="55" class="rounded-circle border border-2 shadow-sm me-3" />
+      <div class="d-flex flex-column lh-sm">
+        <a class="navbar-brand navbar-brand-gradient" href="index.html">
+          Traveler<span class="text-dark">.Agency</span>
+        </a>
+        <small class="text-muted" style="font-size: 0.75rem;">Explore Sri Lanka</small>
+      </div>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="home.html"><i class="bi bi-house me-1"></i> Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-info-circle me-1"></i>About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html"><i class="bi bi-gear me-1"></i>Services</a></li>
+        <li class="nav-item"><a class="nav-link active fw-semibold" href="packages.html"><i class="bi bi-box me-1"></i>Packages</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope me-1"></i>Contact</a></li>
+      </ul>
+      <a href="login.html" class="btn btn-danger ms-3 rounded-pill d-flex align-items-center">
+        <i class="bi bi-person-circle me-2"></i> Login
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container my-5">
+  <div class="row g-4">
+    <div class="col-lg-12">
+      <div class="card border-0 shadow p-3">
+        <div class="row g-0">
+          <!-- Left Side -->
+          <div class="col-md-4">
+            
+            <div class="position-relative mt-3">
+             
+              <a href="https://www.google.com/maps/place/Trincomalee/@8.5832071,81.1720169,13z/data=!3m1!4b1!4m6!3m5!1s0x3afbbcb6902dbe27:0x7de76a7a331b0fbb!8m2!3d8.5873638!4d81.2152121!16zL20vMDJxcTZt?entry=ttu&g_ep=EgoyMDI1MDYxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="text-decoration-none">
+                <button class="btn btn-success btn-sm position-absolute top-50 start-50 translate-middle">
+                  <i class="fas fa-map"></i> View Map
+                </button>
+              </a>
+
+            </div>
+          </div>
+
+          <!-- Right Side -->
+          <div class="col-md-8">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-2">
+                <span class="badge bg-primary me-2">Best Seller</span>
+                <span class="badge bg-light text-dark border">Explorer</span>
+              </div>
+              <h5 class="card-title fw-bold">Sicilian Secrets - Tour of Sicily 8 days</h5>
+              <p>
+                <i class="fas fa-star text-warning"></i>
+                <strong>4.4</strong> (78 traveler reviews)
+              </p>
+              <blockquote class="blockquote small fst-italic text-muted mb-3">
+                "Well planned, excellent tour guide, Placido and bus driver Joe!"<br>
+                
+              </blockquote>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <p><strong>Destinations:</strong> Polhena Beach , Matara Star Fort , Parevi Duwa Temple , Polhena Beach , Mirissa Beach , Madiha Beach </p>
+                  <p><strong>Age Range:</strong> 2 to 90 year olds</p>
+                  <p><strong>Regions:</strong> Sicily, South Italy</p>
+                </div>
+                <div class="col-md-6">
+                  <p><strong>Operated in:</strong> Sinhala English</p>
+                  <p><strong>Operator:</strong> D S Dimsiri<br>
+                    <span class="badge bg-warning text-dark">Gold</span>
+                  </p>
+                  <p><strong>Duration:</strong> 8 days</p>
+                  <p>From <del>$1,828</del><br><span class="h5 text-success">$1,463</span></p>
+                  <p class="small text-muted">$339 now + easy payments of $80</p>
+                </div>
+              </div>
+
+              <div class="d-flex gap-3">
+                <a href="#" class="btn btn-primary">View tour</a>
+                <a href="#" class="btn btn-outline-secondary">Download Brochure</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-white pt-5" style="background: linear-gradient(135deg, #16222a 0%, #3a6073 100%);">
+  <div class="container">
+    <div class="row gy-4">
+      <!-- Navigation -->
+      <div class="col-md-3 col-6">
+        <h6 class="fw-bold mb-3">Navigation</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white-50 text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">About Us</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Service</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Packages</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Contact</a></li>
+        </ul>
+        <h6 class="fw-bold mt-4 mb-2">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Terms & Conditions</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">E – Brochure</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">FAQ</a></li>
+        </ul>
+      </div>
+      <!-- Jetwing Family -->
+      <div class="col-md-3 col-6">
+        <h6 class="fw-bold mb-3">LandExplore Family</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white-50 text-decoration-none">Sri Lanka Tailor-Made</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Inland.Explore Journeys</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Inland.Explore Eco Holidays</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Inland.Explore Events</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Inland.Explore Adventures</a></li>
+        </ul>
+      </div>
+      <!-- Tour -->
+      <div class="col-md-3 col-6">
+        <h6 class="fw-bold mb-3">Tour</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white-50 text-decoration-none">Authentic Ceylon</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Plan Your Trip</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Adventurous Spirit</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Barefoot Luxury</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Following the Wild</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Romantic Serendipity</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Island of Wellness</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Join a Group</a></li>
+        </ul>
+      </div>
+      <!-- Hotline & Contact -->
+      <div class="col-md-3 col-12">
+        <h6 class="fw-bold mb-3">Hotline</h6>
+        <p class="mb-1">
+          <i class="bi bi-telephone-fill text-success me-2"></i>
+          <span class="fs-5">+94 771212121</span>
+        </p>
+        <small class="text-white-50 mb-3 d-block">(24/7) Only for international inquiries</small>
+        <address class="mb-2">
+          <strong>Inland.Explore (Private) Ltd</strong><br>
+          89/4 Navinna,<br>
+          Maharagama,<br>
+          SRI LANKA.<br>
+        </address>
+        <div class="mb-2">
+          <span class="text-white-50">General: </span>+94 11 121212
+        </div>
+        <div class="mb-2">
+          <span class="text-white-50">E-mail: </span>travel@inlandexplore.com
+        </div>
+        <div>
+          <span class="text-white-50">Opening Hours: </span>Mon - Fri: 9 am to 5 pm
+        </div>
+      </div>
+    </div>
+    <!-- Social & App Row -->
+    <div class="row mt-4">
+  <div class="col-12 d-flex justify-content-center">
+    <div class="d-flex align-items-center gap-3">
+      <span class="fw-semibold text-white">Stay Connected:</span>
+      <a href="#" class="text-white-50 fs-4"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-white-50 fs-4"><i class="bi bi-youtube"></i></a>
+      <a href="#" class="text-white-50 fs-4"><i class="bi bi-instagram"></i></a>
+    </div>
+  </div>
+</div>
+
+    <!-- Copyright -->
+    <div class="row mt-4">
+      <div class="bg-dark text-white text-center py-2 mt-1">
+        <p class="mb-0 text-white-100">&copy; 2025 Inland.Explore Sri Lanka. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

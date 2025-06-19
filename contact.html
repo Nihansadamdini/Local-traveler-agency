@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - Traveler Agency</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+   <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="contactstyle.css">
+</head>
+<body>
+
+<!-- Navbar -->
+ <header class="header">
+    <div class="container-fluid bg-dark  py-2">
+      <div class="container d-flex justify-content-end text-white small">
+        <span class="me-3"><i class="fa-solid fa-envelope"></i> yourname@jetwingtravels.com</span>
+        <div class="bg-secondary px-3 py-1 rounded">
+          <a href="#" class="text-white fw-semibold text-decoration-none"><i class="fa-solid fa-video"></i>Hotline</a>
+        </div>
+      </div>
+    </div>
+
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+  <div class="container d-flex align-items-center justify-content-between">
+    
+     <!-- Logo and Brand -->
+    <div class="d-flex align-items-center">
+      <img src="logo.jpg" alt="logo" width="55" height="55" class="rounded-circle border border-2 shadow-sm me-3" />
+      <div class="d-flex flex-column lh-sm">
+        <a class="navbar-brand navbar-brand-gradient" href="index.html">
+          Traveler<span class="text-dark">.Agency</span>
+        </a>
+        <small class="text-muted" style="font-size: 0.75rem;">Explore Sri Lanka</small>
+      </div>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house me-1"></i> Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-info-circle me-1"></i>About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html"><i class="bi bi-gear me-1"></i>Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="packages.html"><i class="bi bi-box me-1"></i>Packages</a></li>
+        <li class="nav-item"><a class="nav-link active fw-semibold" href="contact.html"><i class="bi bi-envelope me-1"></i>Contact</a></li>
+      </ul>
+      <a href="login.html" class="btn btn-danger ms-3 rounded-pill d-flex align-items-center">
+        <i class="bi bi-person-circle me-2"></i> Login
+      </a>
+    </div>
+  </div>
+</nav>
+
+<div class="container py-5">
+  <div class="row mb-4 text-center">
+    <div class="col">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="text-muted">We're here to help you explore Sri Lanka. Reach out to us with any inquiries.</p>
+    </div>
+  </div>
+
+  <div class="row g-5 align-items-stretch">
+    <!-- Contact Form -->
+    <div class="col-lg-6">
+      <div class="contact-wrapper">
+        <form>
+          <div class="mb-3">
+            <label class="form-label"><i class="fas fa-user me-2 info-icon"></i>Your Name</label>
+            <input type="text" class="form-control" placeholder="John Traveler" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label"><i class="fas fa-envelope me-2 info-icon"></i>Your Email</label>
+            <input type="email" class="form-control" placeholder="you@example.com" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label"><i class="fas fa-heading me-2 info-icon"></i>Subject</label>
+            <input type="text" class="form-control" placeholder="Booking Inquiry" required>
+          </div>
+          <div class="mb-4">
+            <label class="form-label"><i class="fas fa-comment-dots me-2 info-icon"></i>Message</label>
+            <textarea class="form-control" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-custom w-100">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Google Map -->
+    <div class="col-lg-6">
+      <div class="map-box">
+        <!-- Replace this iframe with your real Google Map embed code -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63329.9389455217!2d80.75823459675734!3d6.042115362064231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae137d46d30b6ed%3A0xc6a38a4e393c75c!2sMatara!5e0!3m2!1sen!2slk!4v1718719929487"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Info -->
+  <div class="row mt-5 text-center">
+    <div class="col-md-4">
+      <p><i class="fas fa-map-marker-alt info-icon"></i><br> 123, maharagama, Sri Lanka</p>
+    </div>
+    <div class="col-md-4">
+      <p><i class="fas fa-envelope info-icon"></i><br> info@exploresrilanka.com</p>
+    </div>
+    <div class="col-md-4">
+      <p><i class="fas fa-phone info-icon"></i><br> +94 77 1212121</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="text-white pt-5" style="background: linear-gradient(135deg, #16222a 0%, #3a6073 100%);">
+  <div class="container">
+    <div class="row gy-4">
+      <!-- Navigation -->
+      <div class="col-md-3 col-6">
+        <h6 class="fw-bold mb-3">Navigation</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white-50 text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">About Us</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Service</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Packages</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Contact</a></li>
+        </ul>
+        <h6 class="fw-bold mt-4 mb-2">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Terms & Conditions</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">E – Brochure</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">FAQ</a></li>
+        </ul>
+      </div>
+      
+      <div class="col-md-3 col-6">
+        <h6 class="fw-bold mb-3">LandExplore Family</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white-50 text-decoration-none">Sri Lanka Tailor-Made</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Inland.Explore Journeys</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Inland.Explore Eco Holidays</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Inland.Explore Events</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Inland.Explore Adventures</a></li>
+        </ul>
+      </div>
+      <!-- Tour -->
+      <div class="col-md-3 col-6">
+        <h6 class="fw-bold mb-3">Tour</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white-50 text-decoration-none">Authentic Ceylon</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Plan Your Trip</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Adventurous Spirit</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Barefoot Luxury</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Following the Wild</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Romantic Serendipity</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Island of Wellness</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Join a Group</a></li>
+        </ul>
+      </div>
+      <!-- Hotline & Contact -->
+      <div class="col-md-3 col-12">
+        <h6 class="fw-bold mb-3">Hotline</h6>
+        <p class="mb-1">
+          <i class="bi bi-telephone-fill text-success me-2"></i>
+          <span class="fs-5">+94 771212121</span>
+        </p>
+        <small class="text-white-50 mb-3 d-block">(24/7) Only for international inquiries</small>
+        <address class="mb-2">
+          <strong>Inland.Explore (Private) Ltd</strong><br>
+          89/4 Navinna,<br>
+          Maharagama,<br>
+          SRI LANKA.<br>
+        </address>
+        <div class="mb-2">
+          <span class="text-white-50">General: </span>+94 11 121212
+        </div>
+        <div class="mb-2">
+          <span class="text-white-50">E-mail: </span>travel@inlandexplore.com
+        </div>
+        <div>
+          <span class="text-white-50">Opening Hours: </span>Mon - Fri: 9 am to 5 pm
+        </div>
+      </div>
+    </div>
+    <!-- Social & App Row -->
+    <div class="row mt-4">
+  <div class="col-12 d-flex justify-content-center">
+    <div class="d-flex align-items-center gap-3">
+      <span class="fw-semibold text-white">Stay Connected:</span>
+      <a href="#" class="text-white-50 fs-4"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-white-50 fs-4"><i class="bi bi-youtube"></i></a>
+      <a href="#" class="text-white-50 fs-4"><i class="bi bi-instagram"></i></a>
+    </div>
+  </div>
+</div>
+
+    <!-- Copyright -->
+    <div class="row mt-4">
+      <div class="bg-dark text-white text-center py-2 mt-1">
+        <p class="mb-0 text-white-100">&copy; 2025 Inland.Explore Sri Lanka. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Icons (optional) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+</body>
+</html>
