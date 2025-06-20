@@ -24,7 +24,7 @@
         
         .card-img-mathara {
             background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), 
-                        url('https://www.srilankaclassytours.com/medias/place/big/583/thumb.jpg') center/cover;
+                        url('mathara.jpg') center/cover;
             height: 250px; border-radius: 4px;
         }
         
@@ -42,19 +42,19 @@
         
         .card-img-yala {
             background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), 
-                        url('https://www.srilankaclassytours.com/medias/place/big/583/thumb.jpg') center/cover;
+                        url('yala.jpg') center/cover;
             height:250px; border-radius: 4px;
         }
 
         .card-img-trinco {
             background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), 
-                        url('https://www.srilankaclassytours.com/medias/place/big/583/thumb.jpg') center/cover;
+                        url('trinco.jpg') center/cover;
             height: 250px; border-radius: 4px;
         }
         
         .card-img-kitulgala {
             background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), 
-                        url('https://www.srilankaclassytours.com/medias/place/big/583/thumb.jpg') center/cover;
+                        url('rafting.jpg') center/cover;
             height: 250px; border-radius: 4px;
         }
         
@@ -66,6 +66,6 @@
         
         .card-img-kandy {
             background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), 
-                        url('https://www.srilankaclassytours.com/medias/place/big/583/thumb.jpg') center/cover;
+                        url('kandy.jpg') center/cover;
             height: 250px; border-radius: 4px;
         }
